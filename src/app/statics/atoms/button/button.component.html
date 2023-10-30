@@ -1,0 +1,13 @@
+
+<a *ngIf="!isExternalLink" 
+[routerLink]='src'
+[class]="['btnGeneral', contrast ? 'dos' : ' ']" >
+    {{ text }}
+</a>
+
+<a *ngIf="isExternalLink" 
+[href]="src"  
+target="_blank" 
+[class]="['btnGeneral', contrast ? 'dos' : ' ']" >
+    {{ text }}
+</a>

@@ -1,0 +1,79 @@
+.btnGeneral {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 15px;
+    color: #ffffff;
+    background: var(--colorTemePurpure2);
+    padding: 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s ease;
+    box-shadow: 0 0 0 rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+.btnGeneral.dos {
+    background: var(--colorTemeOranje1);
+}
+.DW a.btnGeneral.interElement1Z4.activeContactForm, .MD a.btnGeneral.interElement1Z4.activeContactForm, .DG a.btnGeneral.interElement1Z4.activeContactForm {
+    background: #fff;
+    color: var(--colorTemeDarkGray2);
+    margin-left: .4vw;
+}
+.AW a.btnGeneral.interElement1Z4.activeContactForm, .btnGeneral.two {
+    background: var(--colorTemeDarkGray2);
+    color: #ffffff;
+    margin-left: .4vw;
+}
+.btnGeneral::after, .btnGeneral::before, span.checkbox::after, span.checkbox::before, .hoverDesign::after, .hoverDesign::before {
+    content: '';
+    position: absolute;
+    width: calc(100%);
+    height: calc(100%);
+    border: 1px solid #505559;
+    transform: translate(0px , 0px);
+    border-top: 0;
+    border-right: 0;
+    opacity: .2;
+    transition: transform .4s cubic-bezier(0.75, -0.9, 0.23, 2.1), opacity .4s ease;
+    z-index: -1;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+.btnGeneral::before, span.checkbox::before, .hoverDesign::before{
+    transform: translate(0px , 0px);
+    border: 1px solid #505559;
+    border-bottom: 0;
+    border-left: 0;
+
+}
+.dark .btnGeneral::after, .dark span.checkbox::after, .dark .hoverDesign::after{
+    border: 1px solid #f5f5f5;
+    border-top: 0;
+    border-right: 0;
+}
+.dark .btnGeneral::before, .dark span.checkbox::before, .dark .hoverDesign::before{
+    border: 1px solid #f5f5f5;
+    border-bottom: 0;
+    border-left: 0;
+}
+.btnGeneral:hover, .btnGeneral:focus, .btnGeneral:active, .btnGeneral.two:hover {
+    background: var(--colorTemeOranje1);
+    box-shadow: 0 0 30px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.1);
+}
+
+.btnGeneral:hover::after, .btnGeneral:focus::after, .btnGeneral:active::after,
+.hoverDesign:hover::after, .hoverDesign:focus::after, .hoverDesign:active::after {
+    transform: translate(-6px , 6px);
+    opacity: .4;
+    border-radius: 0 0 0 5px;
+}
+.btnGeneral:hover::before, .btnGeneral:focus::before, .btnGeneral:active::before,
+.hoverDesign:hover::before, .hoverDesign:focus::before, .hoverDesign:active::before {
+    transform: translate(6px , -6px);
+    opacity: .4;
+    border-radius: 0 5px 0 0;
+}
